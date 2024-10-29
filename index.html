@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyCodes</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>KeyCodes</h2>
+    </div>
+    <div class="container">
+        
+        <!-- key code -->
+        <div class="keycode"></div>
+        <p class="initial">*Press any key to get the JavaScript event keycode</p>
+        
+        <!-- cards -->
+        <p class="card-heading hidden">Key code information</p>
+        <div class="cards hidden">
+            <div class="card card1">
+                <p>event.which</p>
+                <div class="context which"></div>
+                <p class="description">
+                    event.which and event.keyCode are deprecated in modern browsers. Use .key or .code instead.
+                </p>
+            </div>
+
+            <div class="card card2">
+                <p>event.code</p>
+                <div class="context code"></div>
+                <p class="description">
+                    The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.
+                </p>
+            </div>
+
+            <div class="card card3">
+                <p>event.key</p>
+                <div class="context key"></div>
+                <p class="description">
+                    The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.
+                </p>
+            </div>
+
+            <div class="card card4">
+                <p>event.location</p>
+                <div class="context location"></div>
+                <p class="description">
+                    Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try
+                    it with both shifts.
+                </p>
+            </div>
+
+        </div>
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
